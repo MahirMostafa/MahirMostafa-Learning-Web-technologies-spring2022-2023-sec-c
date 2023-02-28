@@ -1,6 +1,6 @@
 <httml>
     <head>
-        <title>Forget password</title>
+        <title>Login</title>
     </head>
     <style>
         table,th,td {
@@ -21,13 +21,16 @@
 </tr>
 <tr>
     <td colspan="4" height="200px">
-        <form method="post" action="forget_pass.php" enctype=""></form>
+        <form method="post" action="login.php" enctype="">
         <fieldset>
-             <legend><b>Forget Password</b></legend>
-            Enter Email: <input type="email" id="email" name="email"> <br>
-            <input type ="submit" value="submit"> <br>
+            <legend><b>LOGIN</b></legend>
+            User Name: <input type="text" id="uname" name="uname" > <br>
+            password: <input type="password" id="pass" name="pass"> <br>
+            <input type ="checkbox" name="check" value="check" > Remmember me <br> <br>
+            <input type="submit" value="submit" > <a href="forget_pass.html">Forget password?</a> <br>
+
         </fieldset>
-    </form>
+         </form>
     </td>
 
    
