@@ -15,9 +15,9 @@
 <tr> 
     <td><h2><b> XCompany </b></h2></td>
 
-     <th><a href="public_home.html">Home</a></th>
-    <th><a href="login.html">Login</a></th>
-    <th><a href="registration.html">Registration</a></th>   
+     <th><a href="public_home.php">Home</a></th>
+    <th><a href="login.php">Login</a></th>
+    <th><a href="registration.php">Registration</a></th>   
    
 </tr>
 <tr>

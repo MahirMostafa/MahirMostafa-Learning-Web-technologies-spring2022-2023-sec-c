@@ -27,12 +27,12 @@
             <tr>
                <td>
                 <ul>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="view_profile.html">View Profile</a></li>
-                    <li><a href="edit_profile.html">Edit Profile</a></li>
-                    <li><a href="change_profile_picture.html">Change Profile Picture</a></li>
-                    <li><a href="change_pass.html">Change Password</a></li>
-                    <li><a href="public_home.html">LogOut</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="view_profile.php">View Profile</a></li>
+                    <li><a href="edit_profile.php">Edit Profile</a></li>
+                    <li><a href="change_profile_picture.php">Change Profile Picture</a></li>
+                    <li><a href="change_pass.php">Change Password</a></li>
+                    <li><a href="public_home.php">LogOut</a></li>
 
                 </ul>
                </td> 
@@ -42,10 +42,12 @@
 
     <td colspan="2">
             <form method="post" action="handler.php" enctype="">
-           <legend><b>PROFILE PICTURE</b</legend>
+           <legend><b>CHANGE PASSWORD</b</legend>
             <fieldset>
-                <img src="propic.jpg" height="40%%" width="30%">
-                <input type="file" id="myfile" name="propic" ><br><br>
+                Current password : <input type="password" id="pass" name="pass" ><br>
+                New password : <input type="password" id="npass" name="npass" > <br>
+                Retype password : <input type="password" id="cpass" name="cpass" >
+                 <br><br>
                 <input type="submit" value="submit">
         
         </fieldset>

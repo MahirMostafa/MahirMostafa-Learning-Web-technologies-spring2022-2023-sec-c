@@ -27,12 +27,12 @@
             <tr>
                <td>
                 <ul>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="view_profile.html">View Profile</a></li>
-                    <li><a href="edit_profile.html">Edit Profile</a></li>
-                    <li><a href="change_profile_picture.html">Change Profile Picture</a></li>
-                    <li><a href="change_pass.html">Change Password</a></li>
-                    <li><a href="public_home.html">LogOut</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="view_profile.php">View Profile</a></li>
+                    <li><a href="edit_profile.php">Edit Profile</a></li>
+                    <li><a href="change_profile_picture.php">Change Profile Picture</a></li>
+                    <li><a href="change_pass.php">Change Password</a></li>
+                    <li><a href="public_home.php">LogOut</a></li>
 
                 </ul>
                </td> 
@@ -48,13 +48,13 @@
             <tr>
                 <td width="70%">Name: Bob</td>
                 <td rowspan="5"><img src="propic.jpg" height="100%" width="100%"> <br>
-                    <center><a href="change_profile_picture.html">Change</a></center>
+                    <center><a href="change_profile_picture.php">Change</a></center>
                </td>
             </tr>
             <tr><td>Email    :bob@aiub.edu</td></tr>
             <tr><td>Gender    :Male</td></tr>
             <tr><td>Date Of Birth    :19/09/1998</td></tr>
-            <tr><td><a href="edit_profile.html">Edit profile</a> <br></td></tr>
+            <tr><td><a href="edit_profile.php">Edit profile</a> <br></td></tr>
             </table>
         </fieldset>
         </td>
