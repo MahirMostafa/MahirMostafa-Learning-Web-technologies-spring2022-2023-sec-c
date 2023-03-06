@@ -1,3 +1,5 @@
+<?php    session_start() ; ?>
+
 <httml>
     <head>
         <title> Public home</title>
@@ -14,7 +16,11 @@
 <tr> 
     <td width="40%"><h2><b> XCompany </b></h2></td>
 
-    <th>Logged in as<a href="">Bob</a></th>
+    <th> <?php 
+     echo"Logged In as " ;
+     echo $_SESSION['uname'] ;
+      ?> </th>
+
     <th><a href="public_home.html">Logout</a></th>   
    
 </tr>
@@ -42,11 +48,11 @@
 
     <td colspan="2">
         
-           <legend><b>PROFILE</b</legend>
+           <legend><b>PROFILE </b></legend>
             <fieldset>
             <table boarder="1" width="" height="">
             <tr>
-                <td width="70%">Name: Bob</td>
+                <td width="70%">Name: Mahir</td>
                 <td rowspan="5"><img src="propic.jpg" height="100%" width="100%"> <br>
                     <center><a href="change_profile_picture.php">Change</a></center>
                </td>

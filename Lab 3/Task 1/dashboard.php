@@ -1,3 +1,5 @@
+<?php    session_start() ; ?>
+
 <httml>
     <head>
         <title> Public home</title>
@@ -14,7 +16,10 @@
 <tr> 
     <td width="40%"><h2><b> XCompany </b></h2></td>
 
-    <th>Logged in as<a href="">Bob</a></th>
+     <th> <?php 
+     echo"Logged In as " ;
+     echo $_SESSION['uname'] ;
+      ?> </th>
     <th><a href="public_home.php">Logout</a></th>   
    
 </tr>
@@ -39,7 +44,7 @@
             </tr>
         </table>
     </td>
-<th><h3><b>Welcome Bob</b></h3></th>
+<th colspan="3"><h3> <?php echo "<b> Welcome "  .  $_SESSION['uname'] . "<b>";   ?></h3></th>
 </tr>
 <tr>
     <td colspan="4"><p><center>Copyright (c) 2017</center></p></td>
