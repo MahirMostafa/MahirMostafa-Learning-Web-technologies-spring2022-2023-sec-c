@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Lab task 2</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+
+        <b>Email </b><br>
+        <input type="email" name="name" value="" onkeyup=""><br>
+        <input type="button" name="submit" value="Submit" onclick=" f2()">
+        <p></p>
+
+        <script>
+
+            function f2(){
+                let email = document.getElementsByTagName('input')[0].value;
+
+                if(email == ""){
+                 let obj = document.getElementsByTagName('p')[0];   
+
+                obj.innerHTML = "can not be empty !!";
+                obj.style.color = "red";
+                }
+            }
+        </script>
+</body>
+</html>

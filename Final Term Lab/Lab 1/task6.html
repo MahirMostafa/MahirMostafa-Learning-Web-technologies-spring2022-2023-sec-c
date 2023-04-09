@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab task 6</title>
+	<script>
+		function validateForm()
+         {
+			var bloodGroup = document.getElementById("bloodgroup").value;
+			
+			if (bloodGroup == "") {
+				alert("Please select a blood group");
+				return false;
+			}
+			
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h3><b>6.</b></h3>
+	<form onsubmit="return validateForm()">
+		<fieldset>
+			<legend><b>Blood Group</b></legend>
+			<select id="bloodgroup" name="bloodgroup">
+				<option value=""></option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+			</select>
+		</fieldset>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <title>Lab task 4</title>
+    <style>
+        div{
+            width: 10px;
+            height: 10px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <h3><b>4.</b></h3>
+    <ol>
+        <fieldset>
+        <legend>Date Of Birth</legend>
+    dd<input type="text" name="day" id="day" value="" />/ 
+    mm<input type="text" name="month" id="month" value=""/>/
+    yyyy<input type="text" name="year" id="year" value="" /></br>
+       <input type="submit" id="submit" value="Submit">  
+     </fieldset>
+    
+    </ol>
+
+    <script>
+        const dayInput = document.getElementById('day');
+        const monthInput = document.getElementById('month');
+        const yearInput = document.getElementById('year');
+        const submitBtn = document.getElementById('submit');
+
+        submitBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const day = parseInt(dayInput.value);
+            const month = parseInt(monthInput.value);
+            const year = parseInt(yearInput.value);
+
+            if (isNaN(day) || isNaN(month) || isNaN(year)) {
+                alert('Please enter a valid date of birth');
+                return;
+            }
+
+            if (day < 1 || day > 31 || month < 1 || month > 12 || year < 1900 || year > 2023) {
+                alert('Please enter a valid date of birth');
+                return;
+            }
+
+
+        });
+    </script>
+</body>
+</html>

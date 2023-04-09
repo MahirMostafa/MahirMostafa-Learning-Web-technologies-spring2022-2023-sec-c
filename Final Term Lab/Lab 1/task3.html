@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>Lab task 3</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <h3><b>3.</b></h3>
+    <ol>
+        <fieldset>
+            <legend><b>Gender</b></legend>
+    <input type="radio"  name="gender"/>Male
+    <input type="radio"  name="gender"/>Female
+    <input type="radio"  name="gender"/>Others<br><br>
+        </fieldset>
+        <br>
+        <input type="button" name="submit" value="Submit" onclick=" f2()"> 
+    <p></p>
+    </ol>
+
+        <script>
+
+        function f2(){
+        let gender = document.querySelector('input[name="gender"]:checked');
+    
+       if(!gender)
+       {
+        let obj = document.getElementsByTagName('p')[0];   
+        obj.innerHTML = "At least one of them has to be selected !!";
+        obj.style.color = "red";
+       }
+}
+
+        </script>
+</body>
+</html>

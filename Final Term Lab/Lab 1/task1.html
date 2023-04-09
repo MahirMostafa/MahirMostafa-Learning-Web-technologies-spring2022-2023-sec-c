@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <title>Lab task 1</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+
+        <b>Name </b><br>
+        <input type="text" name="name" value="" onkeyup=""><br>
+        <input type="button" name="submit" value="Submit" onclick=" f2()">
+        <p></p>
+
+        <script>
+
+            function f2(){
+                let username = document.getElementsByTagName('input')[0].value;
+
+                if(username == ""){
+                 let obj = document.getElementsByTagName('p')[0];   
+
+                obj.innerHTML = "can not be empty !!";
+                obj.style.color = "red";
+                }
+                else
+                {
+                    if((username.length) < 2)
+                    {
+                     let obj = document.getElementsByTagName('p')[0];   
+                      obj.innerHTML = "Contains at least two words !!";
+                      obj.style.color = "red";
+                    }
+                    else
+                    {
+                        const firstChar = username.charAt(0);
+                        if(!isNaN(firstChar))
+                        {
+                            let obj = document.getElementsByTagName('p')[0];   
+                            obj.innerHTML = "Must start with a letter !!";
+                            obj.style.color = "red";
+                        }
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab task 7</title>
+	<script>
+		function validateForm() {
+			var userID = document.getElementById("user-id").value;
+			var profilePic = document.getElementById("profile-pic").value;
+			if (userID == "") {
+				alert("UserId can not be empty!!");
+				return false;
+			}
+            else{
+                if(userID < 0)
+                {
+                    alert("UserId must be positive !!");  
+                    return false;
+                }
+                else
+                {
+                  if(profilePic == "")
+                  {
+                    alert("Profile pic can not be empty!!");
+				    return false;
+                  }
+                }
+            }
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h3><b>7.</b></h3>
+	<form action="#" method="POST" onsubmit="return validateForm()">
+        <fieldset>
+          <legend>Profile Picture</legend>
+          <label for="user-id">User ID:</label>
+          <input type="text" id="user-id" name="user-id"><br><br>
+          <label for="profile-pic">Profile Picture:</label>
+          <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+</body>
+</html>
+
